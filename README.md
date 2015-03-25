@@ -10,17 +10,18 @@ Message data, in JSON format, is *POSTed* to the web service, which after initia
 How to call the web service
 -------------------
 
+Regardless on how the web service is called, the JSON must have the following structure.
 
- 1.   **Use cURL**
-
-  curl -X POST -H "application/json" -d '*JSON_DATA*' http://146.148.123.175/consumer_ws.php
-  
-  **JSON format:**
-  
-  JSON must have the following structure.
+**JSON format:**
   
    {"userId": "*INTEGER*", "currencyFrom": "*CURRENCY_CODE*", "currencyTo": "*CURRENCY_CODE*", "amountSell":*INTEGER*, "amountBuy": *DECIMAL*, "rate": *INTEGER*, "timePlaced" : "*D-M-Y H:M:S*", "originatingCountry" : "*COUNTRY_CODE*"}
 
+ 1.   **Use cURL**
+
+ JSON_DATA is the JSON having the above structure.
+ 
+  curl -X POST -H "application/json" -d '*JSON_DATA*' http://146.148.123.175/consumer_ws.php
+  
    **Example:**
 ``` curl -X POST -H "application/json" -d '{"userId": "5", "currencyFrom": "JPY", "currencyTo": "EUR", "amountSell": 1000, "amountBuy": 37.10, "rate": 14, "timePlaced" : "21-FEB-13 10:27:44", "originatingCountry" : "IE"}' http://146.148.123.175/consumer_ws.php```
 
