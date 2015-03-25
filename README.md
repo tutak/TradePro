@@ -16,7 +16,7 @@ Regardless of how the web service is called, the JSON must have the following st
 
    {"userId": "*INTEGER*", "currencyFrom": "*[CURRENCY_CODE](http://www.nationsonline.org/oneworld/currencies.htm)*", "currencyTo": "*[CURRENCY_CODE](http://www.worldatlas.com/aatlas/ctycodes.htm)*", "amountSell":*INTEGER*, "amountBuy": *DECIMAL*, "rate": *INTEGER*, "timePlaced" : "*D-M-Y H:M:S*", "originatingCountry" : "*COUNTRY_CODE*"}
 
- 1.   **Use cURL**
+ 1.   **Using cURL**
 
  *JSON_DATA* is the JSON having the above structure.
  
@@ -25,7 +25,7 @@ Regardless of how the web service is called, the JSON must have the following st
    **Example:**
 ``` curl -X POST -H "application/json" -d '{"userId": "5", "currencyFrom": "JPY", "currencyTo": "EUR", "amountSell": 1000, "amountBuy": 37.10, "rate": 14, "timePlaced" : "21-FEB-13 10:27:44", "originatingCountry" : "IE"}' http://146.148.123.175/consumer_ws.php```
 
- 2.    **Use the URL**
+ 2.    **Using the URL**
  
  Simply POST to http://146.148.123.175/consumer_ws.php using the above structure for JSON.
 
