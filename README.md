@@ -14,7 +14,7 @@ Regardless of how the web service is called, the JSON must have the following st
 
 **JSON format:**
 
-   {"userId": "*INTEGER*", "currencyFrom": "*[CURRENCY_CODE](http://www.nationsonline.org/oneworld/currencies.htm)*", "currencyTo": "*[CURRENCY_CODE](http://www.worldatlas.com/aatlas/ctycodes.htm)*", "amountSell":*INTEGER*, "amountBuy": *DECIMAL*, "rate": *INTEGER*, "timePlaced" : "*D-M-Y H:M:S*", "originatingCountry" : "*COUNTRY_CODE*"}
+   {"userId": "*INTEGER*", "currencyFrom": "*[CURRENCY_CODE](http://www.nationsonline.org/oneworld/currencies.htm)*", "currencyTo": "*[CURRENCY_CODE](http://www.nationsonline.org/oneworld/currencies.htm)*", "amountSell":*INTEGER*, "amountBuy": *DECIMAL*, "rate": *INTEGER*, "timePlaced" : "*D-M-Y H:M:S*", "originatingCountry" : "*[COUNTRY_CODE](http://www.worldatlas.com/aatlas/ctycodes.htm)*"}
 
  1.   **Using cURL**
 
